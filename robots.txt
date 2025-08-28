@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://obsidianmuhely.github.io/obsidian-graphic-art/sitemap.xml
