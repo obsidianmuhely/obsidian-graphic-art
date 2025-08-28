@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obsidian Graphic Art</title>
+  <meta name="description" content="Obsidian Graphic Art – egyedi grafikai megközelítés, megbízásalapú vizuális projektek Debrecenből.">
+  <meta name="keywords" content="grafikai tervezés, logó dizájn, portfólió készítés, vizuális arculat, Debrecen, szabadúszó grafikus">
+  <meta name="author" content="Obsidian Graphic Art">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .animated-header {
+      background: linear-gradient(270deg, #1e2a38, #2f3e4d);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .logo-container img {
+      max-width: 120px;
+      animation: logoFade 3s ease-in-out infinite;
+    }
+
+    @keyframes logoFade {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.05); }
+    }
+
+    nav {
+      background-color: #2f3e4d;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro, .services, .portfolio, .contact {
+      background-color: white;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 30px;
+    }
+
+    h2 {
+      color: #1e2a38;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #1e2a38;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #3a4b5c;
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #1e2a38;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      section {
+        padding: 20px;
+      }
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="animated-header">
+  <div class="logo-container">
+    <img src="Obsidian.png" alt="Obsidian Graphic logó">
+  </div>
+  <h1>Obsidian Graphic Art</h1>
+  <p>Alkotói grafikai megközelítés – megbízásalapú vizuális együttműködések</p>
+</header>
+
+<nav>
+  <a href="#intro">Bemutatkozás</a>
+  <a href="#services">Tevékenységek</a>
+  <a href="#portfolio">Portfólió</a>
+  <a href="#contact">Kapcsolat</a>
+</nav>
+
+<section class="intro" id="intro">
+  <h2>Bemutatkozás</h2>
+  <p>Obsidian Graphic Art néven saját vizuális stílusomat képviselem. Magánszemélyként szabadúszó tervezőként, kreatív feladatokkal foglalkozom és grafikai anyagok tervezésével. Nem működöm üzleti szolgáltatóként. Kérésre, megkeresésre magánszemélyeknek, illetve cégeknél megbízás alapján szívesen kapcsolódom olyan projektekhez, amelyek vizuálisan inspirálóak és egyedi megközelítést igényelnek.</p>
+</section>
+
+<section class="services" id="services">
+  <h2>Alkotói tevékenységek megbízás alapján</h2>
+  <ul>
+    <li>🖼️ Webáruházak képi anyagainak szerkesztése – termékfotók, bannerek, vizuális elemek</li>
+    <li>📁 Digitális portfóliók összeállítása – bemutatkozó anyagok, prezentációs dizájn</li>
+    <li>🧾 Önéletrajzok (CV) vizuális kialakítása – pozícióra szabott megjelenés</li>
+    <li>🏢 Céges logók és arculati elemek – egyedi grafikai megközelítéssel</li>
+  </ul>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <h2>Portfólió</h2>
+  <p>Korábbi munkáimból válogatott előnézetek. Minden anyag egyedi megbízás munkák során készült, személyes együttműködés keretében.</p>
+
+  <button onclick="togglePortfolio()" class="btn">Portfólió megtekintése</button>
+
+  <div id="portfolioContent" style="display:none; max-height:400px; overflow-y:auto; margin-top:20px; border:1px solid #ccc; padding:10px; border-radius:8px; background-color:#fafafa;">
+    <img src="logo 1.jpg" alt="Portfólió oldal 1" loading="lazy" style="width:100%; margin-bottom:20px;">
+    <img src="logo 2.jpg" alt="Portfólió oldal 2" loading="lazy" style="width:100%; margin-bottom:20px;">
+    <img src="logo 3.jpg" alt="Portfólió oldal 3" loading="lazy" style="width:100%;">
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Kapcsolat</h2>
+  <p>📧 Email: obsidianmuhely@gmail.com</p>
+  <p>📞 Telefon: +36-30/956-7156</p>
+  <p>📍 Debrecen, Magyarország</p>
+  <a class="btn" href="mailto:obsidiangraphicart@gmail.com">Írj, ha inspiráló projekted van</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Obsidian Graphic Art – Magánszemélyként végzett kreatív tevékenység</p>
+</footer>
+
+<script>
+  function togglePortfolio() {
+    const content = document.getElementById("portfolioContent");
+    content.style.display = content.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>
